@@ -1,17 +1,16 @@
-import * as React from 'react';
-import Badge from '@mui/material/Badge';
-import IconButton from '@mui/material/IconButton';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import * as React from "react";
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function CartWidget() {
   return (
-    <>
-      <IconButton aria-label="cart">
-        <Badge badgeContent={4} color="primary">
-          <ShoppingCartIcon color="primary"/>
-        </Badge>
-      </IconButton>
-    </>
+    <Button variant="secondary">
+      <FontAwesomeIcon icon={faCartArrowDown} />
+      <Badge bg="secondary">9</Badge>
+      <span className="visually-hidden">unread messages</span>
+    </Button>
   );
 }
 
