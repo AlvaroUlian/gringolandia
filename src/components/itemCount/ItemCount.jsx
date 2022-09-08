@@ -7,22 +7,22 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from "react";
 
-function ItemCount({ stock, initial, onAdd}) {
+const ItemCount = ({ stock, initial, onAdd}) => {
   const [qty, setQty] = useState(initial);
 
   const handleClickPlus = () => {
-    if (qty === stock) {
-      setQty(qty);
-    } else {
+    if (qty < stock) {
       setQty(qty + 1);
+    } else {
+      alert('Órale pues. Alcanzaste el número máximo de unidades');
     }
   };
 
   const handleClickMinus = () => {
-    if (qty === initial) {
-      setQty(qty);
-    } else {
+    if (qty > initial) {
       setQty(qty - 1);
+    } else {
+      alert ('No manches, debes comprar al menos ' + initial + ' unidad')
     }
   };
 

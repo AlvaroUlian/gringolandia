@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Gringos from "../../assets/Gringos.png";
 import CartWidget from "../cartWidget/CartWidget";
 
-function NavbarGringo() {
+const NavbarGringo = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
