@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import ItemList from "../itemList/ItemList";
 import promesa from "../../utils/promesa";
 import Card from "react-bootstrap/Card";
-
-const { productsMx } = require("../../utils/products");
+import productsMx from "../../utils/products";
 
 const ItemListContainer = ({ greeting }) => {
   const [prods, setProds] = useState([]);

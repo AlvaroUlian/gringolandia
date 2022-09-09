@@ -6,7 +6,7 @@ const promesa = (tiempo, tarea) => {
             if(isOk) {
                 resolve(tarea);
             } else {
-                reject("Error");
+                reject("Error en el servidor, intente nuevamente");
             }
         }, tiempo);
     });

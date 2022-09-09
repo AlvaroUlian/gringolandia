@@ -28,6 +28,7 @@ const ItemCount = ({ stock, initial, onAdd}) => {
 
   return (
     <>
+    <center>
       <Card style={{ width: "18rem" }}>
         <Card.Header>
           <center>
@@ -48,6 +49,7 @@ const ItemCount = ({ stock, initial, onAdd}) => {
             Agrégalo al pinche carrito Wey
           </Button>
       </Card>
+      </center>
     </>
   );
 }
