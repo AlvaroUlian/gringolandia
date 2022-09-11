@@ -11,7 +11,7 @@ const productsMx = [
         price: '8 USD',
         category: 'food',
         img: Pozole_rojo,
-        stock: 50,
+        stock: 9,
         description: 'Caldo con maíz, cerdo suave y una sabrosa salsa hecha con chile pasilla ancho y chile guajillo'
 
     },
@@ -21,8 +21,8 @@ const productsMx = [
         price: '6 USD',
         category: 'food',
         img: tacos,
-        stock: 140,
-        description: 'Tortilla, generalmente de maíz, que se dobla o se enrolla para contener dentro diversos ingredientes y algún tipo de salsa.'
+        stock: 14,
+        description: 'Consiste en carne, generalmente de res o de pollo, cocinada junto a tomate y después introducida dentro de una Tortilla, generalmente de maíz, que se dobla o se enrolla. Finalmente se adereza con pico de gallo, una salsa típica mexicana. Un plato con mucha personalidad y que sin duda sabe a méxico.'
 
     },
     {
@@ -31,7 +31,7 @@ const productsMx = [
         price: '6 USD',
         category: 'food',
         img: tamales,
-        stock: 100,
+        stock: 10,
         description: 'Masa de maíz o de arroz rellena de carnes, vegetales, salsas y otros ingredientes.'
 
     },
@@ -41,7 +41,7 @@ const productsMx = [
         price: '5 USD',
         category: 'food',
         img: gordas,
-        stock: 165,
+        stock: 12,
         description: 'Llevan frijoles, salsa y queso, también pueden llevar guisados de distintos tipos.'
 
     }

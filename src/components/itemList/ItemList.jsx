@@ -1,5 +1,6 @@
 import Item from "../item/Item";
 import Row from "react-bootstrap/Row";
+import Spinner from 'react-bootstrap/Spinner';
 
 const ItemList = ({ productsItem }) => {
   return (
@@ -18,7 +19,10 @@ const ItemList = ({ productsItem }) => {
             />
           ))
         ) : (
-          <p>Cargando ...</p>
+          <center>
+         <Spinner animation="border" variant="danger" />
+         </center>
+          
         )}
       </Row>
     </>
@@ -26,3 +30,4 @@ const ItemList = ({ productsItem }) => {
 };
 
 export default ItemList;
+

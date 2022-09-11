@@ -1,5 +1,6 @@
 //import './App.css';
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
+//import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
 import Navbar from './components/navbar/Navbar';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
-        <ItemListContainer greeting="Este es un E-commerce de productos Gringos."/>
+        {/* <center><ItemListContainer greeting="Este es un E-commerce de productos Gringos."/></center> */}
+        <ItemDetailContainer />
       </header>
     </div>
   );
