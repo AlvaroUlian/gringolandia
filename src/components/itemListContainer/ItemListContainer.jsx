@@ -9,7 +9,7 @@ const ItemListContainer = () => {
   const { idCategory } = useParams();
 
   useEffect(() => {
-    if (idCategory > 0) {
+    if (idCategory) {
       promesa(2000, productsMx.filter((item) => item.category === parseInt(idCategory)))
         .then((result) => setProds(result))
         .catch((err) => console.log(err));

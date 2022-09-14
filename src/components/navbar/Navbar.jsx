@@ -8,27 +8,40 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const NavbarGringo = () => {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
       <Container>
-        <LinkContainer to="/">
-          <Navbar.Brand>Gringolandia</Navbar.Brand>
-        </LinkContainer>
-        <center>
-          <Nav className="me-auto">
-            <LinkContainer to='/category/1'><Nav.Link >Comida</Nav.Link></LinkContainer>
-            <LinkContainer to='/category/2'><Nav.Link >Bebida</Nav.Link></LinkContainer>
-            <LinkContainer to='/category/3'><Nav.Link >Salsas</Nav.Link></LinkContainer>
-            <Nav.Link >Sobre Nosotros</Nav.Link>
-          </Nav>
-        </center>
-        <img
-          src={Gringos}
-          width="100"
-          className="d-inline-block align-top"
-          alt="Gringos logo"
-        />
+        <Navbar.Toggle />
+          <Navbar.Collapse>
+            <LinkContainer to="/">
+              <Navbar.Brand>Gringolandia</Navbar.Brand>
+            </LinkContainer>
+            <center>
+              <Nav>
+                <LinkContainer to="/">
+                  <Nav.Link>Inicio</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/category/1">
+                  <Nav.Link>Comida</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/category/2">
+                  <Nav.Link>Bebida</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/category/3">
+                  <Nav.Link>Salsas</Nav.Link>
+                </LinkContainer>
+                <Nav.Link>Sobre Nosotros</Nav.Link>
+              </Nav>
+            </center>
+            </Navbar.Collapse>
+            <img
+              src={Gringos}
+              width="100"
+              className="d-inline-block align-top"
+              alt="Gringos logo"
+            />
+            <CartWidget />
+          
       </Container>
-      <CartWidget />
     </Navbar>
   );
 };
