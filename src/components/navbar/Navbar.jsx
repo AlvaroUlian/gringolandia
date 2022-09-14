@@ -4,17 +4,21 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Gringos from "../../assets/Gringos.png";
 import CartWidget from "../cartWidget/CartWidget";
+import { LinkContainer } from "react-router-bootstrap";
 
 const NavbarGringo = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Gringolandia</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>Gringolandia</Navbar.Brand>
+        </LinkContainer>
         <center>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#catalog">Catálogo</Nav.Link>
-            <Nav.Link href="#aboutUs">Sobre Nosotros</Nav.Link>
+            <LinkContainer to='/category/1'><Nav.Link >Comida</Nav.Link></LinkContainer>
+            <LinkContainer to='/category/2'><Nav.Link >Bebida</Nav.Link></LinkContainer>
+            <LinkContainer to='/category/3'><Nav.Link >Salsas</Nav.Link></LinkContainer>
+            <Nav.Link >Sobre Nosotros</Nav.Link>
           </Nav>
         </center>
         <img
@@ -24,9 +28,9 @@ const NavbarGringo = () => {
           alt="Gringos logo"
         />
       </Container>
-      <CartWidget/>
+      <CartWidget />
     </Navbar>
   );
-}
+};
 
 export default NavbarGringo;

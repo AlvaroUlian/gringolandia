@@ -5,11 +5,12 @@ import Spinner from 'react-bootstrap/Spinner';
 const ItemList = ({ productsItem }) => {
   return (
     <>
-      <Row xs={1} md={productsItem.length}>
+      <Row xs={1} md={4}>
         {productsItem.length ? (
           productsItem.map((item) => (
             <Item
               key={item.id}
+              id={item.id}
               name={item.name}
               price={item.price}
               category={item.category}

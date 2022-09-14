@@ -2,15 +2,15 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
+//import { LinkContainer } from "react-router-bootstrap";
 
-const Item = ({ name, price, img, stock, description }) => {
-  const Detalles = () => {
-    alert(description);
-  };
+const Item = ({ id, name, price, img, stock, description }) => {
+  
   return (
     <>
       <center>
-          <Col>
+          <Col style={{marginTop: '20px'}}>
             <Card className="text-center" style={{ width: "20rem" }}>
               <Card.Header><h5>{name}</h5></Card.Header>
               <Card.Body>
@@ -18,9 +18,11 @@ const Item = ({ name, price, img, stock, description }) => {
                 <Card.Text>
                   Si tienes lana, cómprate uno por {price}
                 </Card.Text>
-                <Button variant="outline-dark" onClick={() => Detalles()}>
-                  Detalles
+                <Link to={`/item/${id}`}>
+                <Button variant="outline-dark">
+                  Héchale un ojo
                 </Button>
+                </Link>
               </Card.Body>
               <Card.Footer className="text-muted">
                 Solamente quedan {stock} unidades. Apúrale!!!
