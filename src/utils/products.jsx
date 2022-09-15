@@ -6,6 +6,8 @@ import michelada from "../assets/michelada.jpg";
 import pico_de_gallo from "../assets/pico_de_gallo.jpg";
 import salsa_chipotle from "../assets/salsa_chipotle.jpg";
 import tequila from "../assets/tequila.jpg";
+import carajillo from "../assets/carajillo.jpg";
+import ranchera from "../assets/ranchera.jpg";
 
 const productsMx = [
   {
@@ -87,6 +89,26 @@ const productsMx = [
     stock: 12,
     description:
       "Incluye chiles chipotles, que no son una variedad de chiles como tal, sino que se obtienen de diferentes variedades de chiles curados, ahumados y finalmente adobados, proceso que les aporta un sabor característico y diferente.",
+  },
+  {
+    id: 9,
+    name: "Salsa ranchera",
+    price: "3 USD",
+    category: 3,
+    img: ranchera,
+    stock: 24,
+    description:
+      "Famosa por ser la salsa que acompaña a uno de los mejores desayunos de México (y del mundo): los huevos rancheros. Con tomates rojos que aportan frescura, chile, cebolla, ajo, sal y aceite de oliva."
+  },
+  {
+    id: 10,
+    name: "Carajillo",
+    price: "3.75 USD",
+    category: 2,
+    img: carajillo,
+    stock: 12,
+    description:
+      "Esta bebida es una combinación simple de café recién hecho y Licor 43, un licor español con sabor a vainilla y cítricos. Mientras bebes esta popular bebida mexicana, podrás saborear la comida y disfrutar del tiempo con tus seres queridos."
   },
 ];
 

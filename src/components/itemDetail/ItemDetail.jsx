@@ -10,7 +10,11 @@ import Spinner from "react-bootstrap/Spinner";
 const ItemDetail = ({ productsItem }) => {
   const onAdd = (cantidad) => {
     alert(
-      "Este Gringo va a comprar " + cantidad + " " + productsItem.name + ". Qué chido!!!"
+      "Este Gringo va a comprar " +
+        cantidad +
+        " " +
+        productsItem.name +
+        ". Qué chido!!!"
     );
   };
 
@@ -19,18 +23,20 @@ const ItemDetail = ({ productsItem }) => {
       {productsItem.img ? (
         <Container>
           <Row>
-            <Col sm={6} style={{marginTop: '60px'}}>
+            <Col sm={6} style={{ marginTop: "90px" }}>
               <center>
                 <Figure>
                   <Figure.Image alt="171x180" src={productsItem.img} />
                 </Figure>
               </center>
             </Col>
-            <Col sm={6} style={{marginTop: '60px', paddingLeft: '60px'}}>
-            <Row>
-            <center><h1 style={{color: 'red',}}>{productsItem.name}</h1></center>
+            <Col sm={6} style={{ marginTop: "90px", paddingLeft: "60px" }}>
+              <Row>
+                <center>
+                  <h1 style={{ color: "red" }}>{productsItem.name}</h1>
+                </center>
               </Row>
-              <Row style={{marginTop: '30px'}}>
+              <Row style={{ marginTop: "30px" }}>
                 <p>{productsItem.description}</p>
               </Row>
               <Row>
@@ -41,8 +47,12 @@ const ItemDetail = ({ productsItem }) => {
                   Solamente quedan {productsItem.stock} unidades. Apúrale!!!
                 </h6>
               </Row>
-              <Row style={{marginTop: '60px'}}>
-              <ItemCount stock={productsItem.stock} initial={1} onAdd={onAdd} />
+              <Row style={{ marginTop: "60px" }}>
+                <ItemCount
+                  stock={productsItem.stock}
+                  initial={1}
+                  onAdd={onAdd}
+                />
               </Row>
             </Col>
           </Row>

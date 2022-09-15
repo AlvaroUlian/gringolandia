@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 const Item = ({ id, name, price, img, stock, description }) => {
   return (
     <>
-      <center>
-        <Container fluid>
-          <Col style={{ marginTop: "20px" }}>
+      <Container fluid>
+        <center>
+          <Col style={{ marginTop: "70px" }}>
             <Card className="text-center" style={{ width: "20rem" }}>
               <Card.Header>
                 <h5>{name}</h5>
@@ -28,8 +28,8 @@ const Item = ({ id, name, price, img, stock, description }) => {
               </Card.Footer>
             </Card>
           </Col>
-        </Container>
-      </center>
+        </center>
+      </Container>
     </>
   );
 };
