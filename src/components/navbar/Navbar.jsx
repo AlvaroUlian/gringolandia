@@ -12,12 +12,12 @@ const NavbarGringo = () => {
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <LinkContainer to="/">
+          <LinkContainer to="/gringolandia-Ulian">
             <Navbar.Brand>Gringolandia</Navbar.Brand>
           </LinkContainer>
           <center>
             <Nav>
-              <LinkContainer to="/">
+              <LinkContainer to="/gringolandia-Ulian">
                 <Nav.Link>Inicio</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/category/1">

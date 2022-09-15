@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/gringolandia-Ulian' element={<ItemListContainer />} />
         <Route path='/category/:idCategory' element={<ItemListContainer />} />
         <Route path='/item/:idItem' element={<ItemDetailContainer /> }/>
       </Routes>
