@@ -8,7 +8,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const NavbarGringo = () => {
   return (
-    <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
+    <Navbar collapseOnSelect sticky="top" expand="sm" bg="dark" variant="dark">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -5,10 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd}) => {
   const [qty, setQty] = useState(initial);
+
+  useEffect(() => {
+    setQty(initial);
+  }, [initial]);
 
   const handleClickPlus = () => {
     if (qty < stock) {
@@ -45,9 +49,14 @@ const ItemCount = ({ stock, initial, onAdd}) => {
             </ButtonGroup>
           </center>
         </Card.Header>
-          <Button variant="dark" onClick={() => onAdd(qty)}>
+        {
+          stock && qty
+          ? <Button variant="dark" onClick={() => onAdd(qty)}>
             Agrégalo al pinche carrito Wey
           </Button>
+          : <Button disabled>Agrégalo al pinche carrito Wey</Button>
+        }
+          
       </Card>
       </center>
     </>

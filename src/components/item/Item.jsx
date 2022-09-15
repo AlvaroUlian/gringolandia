@@ -11,7 +11,7 @@ const Item = ({ id, name, price, img, stock, description }) => {
     <>
       <Container fluid>
         <center>
-          <Col style={{ marginTop: "70px" }}>
+          <Col style={{ marginTop: "30px" }}>
             <Card className="text-center" style={{ width: "20rem" }}>
               <Card.Header>
                 <h5>{name}</h5>
