@@ -13,7 +13,7 @@ const productsMx = [
   {
     id: 1,
     name: "Pozole Rojo",
-    price: "8 USD",
+    price: 5.99,
     category: 1,
     img: Pozole_rojo,
     stock: 9,
@@ -23,7 +23,7 @@ const productsMx = [
   {
     id: 2,
     name: "Tacos",
-    price: "6 USD",
+    price: 4.99,
     category: 1,
     img: tacos,
     stock: 14,
@@ -33,7 +33,7 @@ const productsMx = [
   {
     id: 3,
     name: "Tamales",
-    price: "6 USD",
+    price: 2.75,
     category: 1,
     img: tamales,
     stock: 10,
@@ -43,7 +43,7 @@ const productsMx = [
   {
     id: 4,
     name: "Gordas Pellizcadas",
-    price: "5 USD",
+    price: 2.99,
     category: 1,
     img: gordas,
     stock: 12,
@@ -53,7 +53,7 @@ const productsMx = [
   {
     id: 5,
     name: "Michelada",
-    price: "4.50 USD",
+    price: 3.95,
     category: 2,
     img: michelada,
     stock: 35,
@@ -63,7 +63,7 @@ const productsMx = [
   {
     id: 6,
     name: "Pico de Gallo",
-    price: "5 USD",
+    price: 2.80,
     category: 3,
     img: pico_de_gallo,
     stock: 12,
@@ -73,7 +73,7 @@ const productsMx = [
   {
     id: 7,
     name: "Tequila",
-    price: "5 USD",
+    price: 4.39,
     category: 2,
     img: tequila,
     stock: 12,
@@ -83,7 +83,7 @@ const productsMx = [
   {
     id: 8,
     name: "Salsa chipotle",
-    price: "5 USD",
+    price: 3.65,
     category: 3,
     img: salsa_chipotle,
     stock: 12,
@@ -93,7 +93,7 @@ const productsMx = [
   {
     id: 9,
     name: "Salsa ranchera",
-    price: "3 USD",
+    price: 3.25,
     category: 3,
     img: ranchera,
     stock: 24,
@@ -103,7 +103,7 @@ const productsMx = [
   {
     id: 10,
     name: "Carajillo",
-    price: "3.75 USD",
+    price: 3.75,
     category: 2,
     img: carajillo,
     stock: 12,

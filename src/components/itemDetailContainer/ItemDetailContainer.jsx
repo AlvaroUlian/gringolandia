@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
   const { idItem } = useParams();
 
   useEffect(() => {
-    promesa(2000, productsMx.find((item) => item.id === parseInt(idItem)))
+    promesa(500, productsMx.find((item) => item.id === parseInt(idItem)))
       .then((result) => setProds(result))
       .catch((err) => console.log(err));
   }, [idItem]);

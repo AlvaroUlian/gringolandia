@@ -7,9 +7,13 @@ import Figure from "react-bootstrap/Figure";
 import ItemCount from "../itemCount/ItemCount";
 import Spinner from "react-bootstrap/Spinner";
 import { Link } from "react-router-dom";
+import { CartContext } from "../cartContext/CartContext";
+import { useContext } from "react";
 
 const ItemDetail = ({ productsItem }) => {
   const [itemCount, setItemCount] = useState(0);
+  const { addItem } = useContext(CartContext)
+
   const onAdd = (cantidad) => {
     alert(
       "Este Gringo va a comprar " +
@@ -19,6 +23,7 @@ const ItemDetail = ({ productsItem }) => {
         ". Qué chido!!!"
     );
     setItemCount(cantidad);
+    addItem(productsItem, cantidad)
   };
 
   return (

@@ -10,11 +10,11 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     if (idCategory) {
-      promesa(2000, productsMx.filter((item) => item.category === parseInt(idCategory)))
+      promesa(500, productsMx.filter((item) => item.category === parseInt(idCategory)))
         .then((result) => setProds(result))
         .catch((err) => console.log(err));
     } else {
-      promesa(2000, productsMx)
+      promesa(500, productsMx)
         .then((result) => setProds(result))
         .catch((err) => console.log(err));
     }

@@ -4,14 +4,18 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 
-const CartWidget = () =>{
+const CartWidget = () => {
   return (
-    <Button variant="secondary">
+    <>
       <FontAwesomeIcon icon={faCartArrowDown} />
-      <Badge bg="secondary">9</Badge>
-      <span className="visually-hidden">unread messages</span>
-    </Button>
+      <Badge bg="danger">
+        <Button variant="dark">
+          <FontAwesomeIcon icon={faCartArrowDown} />
+          <sup>3</sup>
+        </Button>
+      </Badge>
+    </>
   );
-}
+};
 
 export default CartWidget;

@@ -54,7 +54,7 @@ const ItemCount = ({ stock, initial, onAdd}) => {
           ? <Button variant="dark" onClick={() => onAdd(qty)}>
             Agrégalo al pinche carrito Wey
           </Button>
-          : <Button disabled>Agrégalo al pinche carrito Wey</Button>
+          : <Button disabled>Agrégalo al pinche carrito güey</Button>
         }
           
       </Card>
