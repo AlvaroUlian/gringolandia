@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../cartContext/CartContext";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 
@@ -22,17 +22,28 @@ const Cart = () => {
                 cantidad={product.cantidad}
               />
             ))}
+            <center>
+              <h4>Total de lana: U$S {totalPrice}</h4>
+            </center>
 
-            <h4>Total de lana: U$S {totalPrice}</h4>
             <Container>
-              <Button variant="danger" onClick={() => clear()}>
-                Ni modo, vaciemos el carrito
-              </Button>
+              <Row>
+                <center>
+                  <Button variant="danger" onClick={() => clear()}>
+                    Ni modo, vaciemos el carrito
+                  </Button>
+                </center>
+              </Row>
+              <Row style={{ paddingTop: "5px" }}>
+                <center>
+                  <Button variant="outline-dark">Qué chulada de compra</Button>
+                </center>
+              </Row>
             </Container>
           </>
         ) : (
           <>
-            <p>Esto está chingón, mejor ...</p>
+            <h5>Esto está chingón, mejor ...</h5>
             <Button variant="primary" as={Link} to="/gringolandia-Ulian">
               Nos devolvemos
             </Button>
