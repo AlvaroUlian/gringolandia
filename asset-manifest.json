@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gringolandia-Ulian/static/css/main.4de0fa12.css",
-    "main.js": "/gringolandia-Ulian/static/js/main.766aadf8.js",
+    "main.js": "/gringolandia-Ulian/static/js/main.18cd60b4.js",
     "static/media/gordas.jpg": "/gringolandia-Ulian/static/media/gordas.51f1310182f2fae0536f.jpg",
     "static/media/tacos.jpg": "/gringolandia-Ulian/static/media/tacos.40f5690d729b6459b417.jpg",
     "static/media/tamales.jpg": "/gringolandia-Ulian/static/media/tamales.1b6156b587e1af684d35.jpg",
@@ -15,10 +15,10 @@
     "static/media/Gringos.png": "/gringolandia-Ulian/static/media/Gringos.1a762111dcc7ab15e705.png",
     "index.html": "/gringolandia-Ulian/index.html",
     "main.4de0fa12.css.map": "/gringolandia-Ulian/static/css/main.4de0fa12.css.map",
-    "main.766aadf8.js.map": "/gringolandia-Ulian/static/js/main.766aadf8.js.map"
+    "main.18cd60b4.js.map": "/gringolandia-Ulian/static/js/main.18cd60b4.js.map"
   },
   "entrypoints": [
     "static/css/main.4de0fa12.css",
-    "static/js/main.766aadf8.js"
+    "static/js/main.18cd60b4.js"
   ]
 }
