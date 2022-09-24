@@ -63,7 +63,7 @@ const productsMx = [
   {
     id: 6,
     name: "Pico de Gallo",
-    price: 2.80,
+    price: 2.8,
     category: 3,
     img: pico_de_gallo,
     stock: 12,
@@ -98,7 +98,7 @@ const productsMx = [
     img: ranchera,
     stock: 24,
     description:
-      "Famosa por ser la salsa que acompaña a uno de los mejores desayunos de México (y del mundo): los huevos rancheros. Con tomates rojos que aportan frescura, chile, cebolla, ajo, sal y aceite de oliva."
+      "Famosa por ser la salsa que acompaña a uno de los mejores desayunos de México (y del mundo): los huevos rancheros. Con tomates rojos que aportan frescura, chile, cebolla, ajo, sal y aceite de oliva.",
   },
   {
     id: 10,
@@ -108,7 +108,7 @@ const productsMx = [
     img: carajillo,
     stock: 12,
     description:
-      "Esta bebida es una combinación simple de café recién hecho y Licor 43, un licor español con sabor a vainilla y cítricos. Mientras bebes esta popular bebida mexicana, podrás saborear la comida y disfrutar del tiempo con tus seres queridos."
+      "Esta bebida es una combinación simple de café recién hecho y Licor 43, un licor español con sabor a vainilla y cítricos. Mientras bebes esta popular bebida mexicana, podrás saborear la comida y disfrutar del tiempo con tus seres queridos.",
   },
 ];
 
