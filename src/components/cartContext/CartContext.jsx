@@ -8,6 +8,10 @@ const CartContextProvider = ({ children }) => {
   const [units, setUnits] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
+  const isInCart = (id) => {
+    return cartList.find((item) => item.id === id);
+  };
+
   const addItem = (product, cantidad) => {
     if (!isInCart(product.id)) {
       setCartList([
@@ -33,10 +37,6 @@ const CartContextProvider = ({ children }) => {
       setCartList(cartAux);
       setTotalPrice(totalPrice + product.price * cantidad);
     }
-  };
-
-  const isInCart = (id) => {
-    return cartList.find((item) => item.id === id);
   };
 
   const removeItem = (id, cantidad, price) => {

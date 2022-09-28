@@ -3,9 +3,52 @@ import { CartContext } from "../cartContext/CartContext";
 import { Container, Button, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
+import {
+  serverTimestamp,
+  doc,
+  setDoc,
+  collection,
+  updateDoc,
+  increment,
+} from "firebase/firestore";
+import { db } from "../../utils/firebaseConfig";
 
 const Cart = () => {
   const { cartList, clear, totalPrice } = useContext(CartContext);
+  const createOrder = async () => {
+    let itemsForDB = cartList.map((item) => ({
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      cantidad: item.cantidad,
+    }));
+    let order = {
+      buyer: {
+        name: "Vicente Fernandez",
+        email: "chente@elrey.com",
+        phone: "923 555 7843",
+      },
+      date: serverTimestamp(),
+      items: itemsForDB,
+      total: totalPrice,
+    };
+    const newOrderRef = doc(collection(db, "orders"));
+    await setDoc(newOrderRef, order);
+    alert(
+      "Qué onda carnal, tu orden es la: " +
+        newOrderRef.id +
+        " por si las moscas"
+    );
+    clear();
+    
+    itemsForDB.map(async (item) => {
+      const itemRef = doc(db, "productsMx", item.id);
+      await updateDoc(itemRef, {
+        stock: increment(-item.cantidad),
+      });
+    })
+    
+  };
 
   return (
     <>
@@ -36,7 +79,9 @@ const Cart = () => {
               </Row>
               <Row style={{ paddingTop: "5px" }}>
                 <center>
-                  <Button variant="outline-dark">Qué chulada de compra</Button>
+                  <Button variant="outline-dark" onClick={createOrder}>
+                    Qué chulada de compra
+                  </Button>
                 </center>
               </Row>
             </Container>
